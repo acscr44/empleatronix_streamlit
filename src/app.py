@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 import streamlit as st
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 df = pd.read_csv("employees.csv")
 

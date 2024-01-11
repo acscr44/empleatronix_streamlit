@@ -1,7 +1,7 @@
 FROM python:3.8
 
 # instalación de librerías streamlit:
-RUN pip install numpy pandas streamlit seaborn matplotlib
+RUN pip install streamlit
 
 # se copia desde el ámbito local al ámbito del contenedor:
 COPY src/* /app/

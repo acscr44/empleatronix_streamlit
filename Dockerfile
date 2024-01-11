@@ -1,10 +1,11 @@
 FROM python:3.8
 
-# instalación de librerías streamlit:
-RUN pip install streamlit
+# instalación de librerías streamlit (solo en docker):
+RUN pip install numpy pandas streamlit seaborn matplotlib
 
-# se copia desde el ámbito local al ámbito del contenedor:
+# se copia desde el ámbito local al ámbito del contenedor (solo en docker):
 COPY src/* /app/
+COPY data/* /app/data/
 
 EXPOSE 8501
 

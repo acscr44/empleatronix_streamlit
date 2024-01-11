@@ -4,7 +4,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("employees.csv")
+df = pd.read_csv("data/employees.csv")
 
 st.title('EMPLEATRONIX')
 
